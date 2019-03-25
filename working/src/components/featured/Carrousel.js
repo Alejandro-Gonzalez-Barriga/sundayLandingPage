@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import slide_one from '../../resources/images/slide_one.jpg';
 import slide_two from '../../resources/images/slide_two.jpg';
 import slide_three from '../../resources/images/slide_three.jpg';
+import slide_four from '../../resources/images/slide_four.jpg';
 
 
 const Carrousel = () => {
@@ -16,7 +17,7 @@ const Carrousel = () => {
     }
 
     return (
-        <div 
+        <div
             className="carrousel_wrapper"
             style={{
                 height:`${window.innerHeight}px`,
@@ -25,7 +26,7 @@ const Carrousel = () => {
         >
             <Slider {...settings}>
                 <div>
-                   <div 
+                   <div
                         className="carrousel_image"
                         style={{
                             background:`url(${slide_one})`,
@@ -34,7 +35,7 @@ const Carrousel = () => {
                    ></div>
                 </div>
                 <div>
-                    <div 
+                    <div
                         className="carrousel_image"
                         style={{
                             background:`url(${slide_two})`,
@@ -43,7 +44,7 @@ const Carrousel = () => {
                    ></div>
                 </div>
                 <div>
-                    <div 
+                    <div
                         className="carrousel_image"
                         style={{
                             background:`url(${slide_three})`,
@@ -51,8 +52,17 @@ const Carrousel = () => {
                         }}
                    ></div>
                 </div>
+                <div>
+                   <div
+                        className="carrousel_image"
+                        style={{
+                            background:`url(${slide_four})`,
+                            height:`${window.innerHeight}px`
+                        }}
+                   ></div>
+                </div>
             </Slider>
-            
+
         </div>
     );
 };

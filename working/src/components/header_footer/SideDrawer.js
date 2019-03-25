@@ -22,29 +22,26 @@ const SideDrawer = (props) => {
             anchor="right"
             open={props.open}
             onClose={()=> props.onClose(false)}
+
         >
             <List component="nav">
                 <ListItem button onClick={()=> scrollToElement('featured')}>
                     Event starts in
                 </ListItem>
 
-                <ListItem button onClick={()=> scrollToElement('venuenfo')}>
-                    Venue NFO
-                </ListItem>
-
                 <ListItem button onClick={()=> scrollToElement('highlights')}>
-                    Highlights
+                    Schedule
                 </ListItem>
 
                 <ListItem button onClick={()=> scrollToElement('pricing')}>
-                    Pricing
+                    Donate
                 </ListItem>
 
                 <ListItem button onClick={()=> scrollToElement('location')}>
                     Location
                 </ListItem>
 
-            </List> 
+            </List>
         </Drawer>
     );
 };
